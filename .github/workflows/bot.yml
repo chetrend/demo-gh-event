@@ -17,6 +17,7 @@ jobs:
       id: hello
       uses: benoitf/che-triage@master
       with:
+        read-token: ${{ secrets.GITHUB_TOKEN }}
         write-token: ${{ secrets.GITHUB_TOKEN }}
     # Use the output from the `hello` step
     - name: Get the output time
