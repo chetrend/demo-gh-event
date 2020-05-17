@@ -15,7 +15,7 @@ jobs:
     # Run docker action
     - name: Hello world action step
       id: hello
-      uses: benoitf/che-triage@0.0.1
+      uses: benoitf/che-triage@master
       with:
         write-token: ${{ secrets.GITHUB_TOKEN }}
     # Use the output from the `hello` step
