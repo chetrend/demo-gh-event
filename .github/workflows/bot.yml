@@ -10,11 +10,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-    # Run docker action
-    - name: Hello world action step
-      id: hello
+    - name: Che Triage Action
+      id: che-triage
       uses: benoitf/che-triage@master
       with:
         read-token: ${{ secrets.GITHUB_TOKEN }}
