@@ -2,7 +2,8 @@ name: bot
 on:
   issue_comment:
     types: [created, edited, deleted]
-
+  issues:
+    types: [opened, edited, milestoned]
 jobs:
   triage:
     # The type of runner that the job will run on
