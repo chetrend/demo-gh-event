@@ -3,7 +3,10 @@ on:
   issue_comment:
     types: [created, edited, deleted]
   issues:
-    types: [opened, edited, milestoned]
+    types: [opened, edited, deleted, transferred, closed, reopened, assigned, unassigned, labeled, unlabeled, milestoned, demilestoned]
+  pull_request:
+    types: [opened, edited, closed, assigned, unassigned, labeled, unlabeled, reopened, synchronize, ready_for_review, review_requested, review_request_removed]   
+    
 jobs:
   triage:
     # The type of runner that the job will run on
